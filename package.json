@@ -1,0 +1,26 @@
+{
+  "name": "ai-stock-predictor",
+  "version": "1.0.0",
+  "description": "AI-powered stock and cryptocurrency price prediction platform",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.4.0",
+    "yfinance": "^0.2.3",
+    "node-binance-api": "^0.13.1",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

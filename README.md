@@ -22,7 +22,7 @@ A full-stack web application that predicts stock and cryptocurrency price trends
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/shubhammukherjee17/AI-Stock.git>
 cd ai-stock-predictor
 ```
 

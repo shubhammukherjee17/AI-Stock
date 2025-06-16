@@ -21,9 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/stock-pre
 .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
-app.use('/api/stocks', require('./routes/stocks'));
-app.use('/api/crypto', require('./routes/crypto'));
-app.use('/api/predictions', require('./routes/predictions'));
+app.use('/predict', require('./routes/predictions'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
